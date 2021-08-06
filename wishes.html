@@ -1,0 +1,75 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style-wishes.css">
+    <title>Wishes&#128220;</title>
+</head>
+
+<body>
+    <div class="container-md">
+        <div class="row h-100">
+        <div class="card col-md-12 my-auto bg-transparent shadow text-center">
+            <div class="card-body container-md">
+                <img src="profile-pic.png" class="rounded mx-auto d-block w-25" alt="...">
+                <h4 class="card-title">
+                    <h1 class="title">Happy Birthday 19th! My Lovely, <b>Ajeng Dinar Berliana</b></h1>
+                </h4>
+                <p class="card-text"><button type="button" class="btn btn-outline-light" onclick="typeWriter()"
+                        data-toggle="modal" data-target="#staticBackdrop">
+                        Read Wishes
+                    </button></p>
+            </div>
+        </div>
+    </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Dear, Ajeng</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="p-wishes"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-dismiss="modal">💝 U</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var i = 0;
+        var txt =
+            'Disini aku Fajar, mengucapkan selamat ulang tahun yang ke 19 ya! Doaku.. Semoga yang dicita-citakan selalu tersampaikan, yang diinginkan segera disegerakan. Selalu diberikan kesehatan, kelancaran dan kesabaran menghadapi segala urusan. Tambah dewasa lagi, hilang bandelnya, patuh kepada orang tua. Tetap menjadi ajeng yang ceria, gembira, lucu dan menggemaskan ya! 💝 -Made By Love';
+        var speed = 50;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("p-wishes").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

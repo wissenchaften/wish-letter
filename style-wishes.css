@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Style+Script&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(bg-birthday.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    text-shadow: 2px 2px black;
+    color: white;
+}
